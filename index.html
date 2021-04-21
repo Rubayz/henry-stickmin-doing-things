@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do the things!</title>
+</head>
+<body>
+    <section id="first-page">
+        <h1>Hi Guys! Lets play a little game! Wanna play? Click on the button below</h1>
+        <button id="start-btn">Start</button>
+    </section>
+    <section id="game-screen" style="display: none;">
+        <h1>Do something like the option</h1>
+        <img id="main-img" src="./henry.png" alt="">
+        <button id="dance-btn">Dance</button>
+        <img src="./dance.gif" id="dance-img" alt="" style="display: none;">
+        <button id="sing-btn">Sing</button>
+        <img src="./sing.gif" id="sing-img" alt="" style="display: none;">
+        <button id="thumbsup-btn">Thumbsup</button>
+        <img src="./thumbsup.gif" id="thumbsup-img" alt="" style="display: none;">
+        <button id="mission-complete">Mission Complete</button>
+        <img src="./mission-complete.gif" id="mission-img" style="display: none;" alt="">
+    </section>
+</body>
+<script>
+    document.getElementById("start-btn").addEventListener("click", function(){
+        document.getElementById("first-page").style.display = "none";
+        document.getElementById("game-screen").style.display = 'block';
+    })
+    document.getElementById("dance-btn").addEventListener("click", function(){
+        document.getElementById("main-img").style.display = "none";
+        document.getElementById("dance-img").style.display = "block"
+    })
+    document.getElementById("sing-btn").addEventListener("click", function(){
+        document.getElementById("main-img").style.display = "none";
+        document.getElementById("sing-img").style.display = "block"
+    })
+    document.getElementById("thumbsup-btn").addEventListener("click", function(){
+        document.getElementById("main-img").style.display = "none";
+        document.getElementById("thumbsup-img").style.display = "block"
+    })
+    document.getElementById("mission-complete").addEventListener("click", function(){
+        document.getElementById("main-img").style.display = "none";
+        document.getElementById("mission-img").style.display = "block"
+    })
+</script>
+</html>
